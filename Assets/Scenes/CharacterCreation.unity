@@ -572,6 +572,8 @@ GameObject:
   - component: {fileID: 202503012}
   - component: {fileID: 202503014}
   - component: {fileID: 202503013}
+  - component: {fileID: 202503015}
+  - component: {fileID: 202503016}
   m_Layer: 5
   m_Name: Hat3
   m_TagString: Untagged
@@ -636,6 +638,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202503011}
   m_CullTransparentMesh: 1
+--- !u!225 &202503015
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202503011}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &202503016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202503011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8115cf668f0564685ba550123be3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableItem
+  isPlacedOnCharacter: 0
 --- !u!1 &207160906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,6 +1284,8 @@ GameObject:
   - component: {fileID: 505971571}
   - component: {fileID: 505971573}
   - component: {fileID: 505971572}
+  - component: {fileID: 505971574}
+  - component: {fileID: 505971575}
   m_Layer: 5
   m_Name: Cape3
   m_TagString: Untagged
@@ -1321,6 +1350,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505971570}
   m_CullTransparentMesh: 1
+--- !u!225 &505971574
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505971570}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &505971575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505971570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8115cf668f0564685ba550123be3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableItem
+  isPlacedOnCharacter: 0
 --- !u!1 &533118378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,8 +1545,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 617058344}
+  - component: {fileID: 617058345}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ClothingManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1513,6 +1568,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &617058345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617058343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd01d5b2b80d8a247816fc41aa1341c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClothingCategoryManager
+  categories:
+  - categoryName: Cepures
+    categoryToggle: {fileID: 201623823}
+    categoryPanel: {fileID: 912661898}
+  - categoryName: "Apmet\u0146i"
+    categoryToggle: {fileID: 533118380}
+    categoryPanel: {fileID: 1182133031}
+  - categoryName: Zobeni
+    categoryToggle: {fileID: 688166905}
+    categoryPanel: {fileID: 1140602415}
 --- !u!1 &688166903
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,6 +2357,8 @@ GameObject:
   - component: {fileID: 1016496685}
   - component: {fileID: 1016496687}
   - component: {fileID: 1016496686}
+  - component: {fileID: 1016496688}
+  - component: {fileID: 1016496689}
   m_Layer: 5
   m_Name: Cape1
   m_TagString: Untagged
@@ -2344,6 +2423,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016496684}
   m_CullTransparentMesh: 1
+--- !u!225 &1016496688
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016496684}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1016496689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016496684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8115cf668f0564685ba550123be3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableItem
+  isPlacedOnCharacter: 0
 --- !u!1 &1033754722
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,6 +3273,7 @@ GameObject:
   - component: {fileID: 1284969142}
   - component: {fileID: 1284969144}
   - component: {fileID: 1284969143}
+  - component: {fileID: 1284969145}
   m_Layer: 5
   m_Name: Character2
   m_TagString: Untagged
@@ -3233,6 +3338,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284969141}
   m_CullTransparentMesh: 1
+--- !u!114 &1284969145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284969141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6491272f9e845354f82788ded2282ccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DropZone
 --- !u!1 &1316481977
 GameObject:
   m_ObjectHideFlags: 0
@@ -3745,6 +3862,8 @@ GameObject:
   - component: {fileID: 1471389101}
   - component: {fileID: 1471389103}
   - component: {fileID: 1471389102}
+  - component: {fileID: 1471389104}
+  - component: {fileID: 1471389105}
   m_Layer: 5
   m_Name: Sword2
   m_TagString: Untagged
@@ -3809,6 +3928,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471389100}
   m_CullTransparentMesh: 1
+--- !u!225 &1471389104
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471389100}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1471389105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471389100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8115cf668f0564685ba550123be3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableItem
+  isPlacedOnCharacter: 0
 --- !u!1 &1513743677
 GameObject:
   m_ObjectHideFlags: 0
@@ -4032,6 +4176,8 @@ GameObject:
   - component: {fileID: 1613187340}
   - component: {fileID: 1613187342}
   - component: {fileID: 1613187341}
+  - component: {fileID: 1613187343}
+  - component: {fileID: 1613187344}
   m_Layer: 5
   m_Name: Hat2
   m_TagString: Untagged
@@ -4096,6 +4242,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613187339}
   m_CullTransparentMesh: 1
+--- !u!225 &1613187343
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613187339}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1613187344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613187339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8115cf668f0564685ba550123be3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableItem
+  isPlacedOnCharacter: 0
 --- !u!1 &1652382154
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,6 +4881,8 @@ GameObject:
   - component: {fileID: 1909617695}
   - component: {fileID: 1909617697}
   - component: {fileID: 1909617696}
+  - component: {fileID: 1909617698}
+  - component: {fileID: 1909617699}
   m_Layer: 5
   m_Name: Cape2
   m_TagString: Untagged
@@ -4774,6 +4947,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909617694}
   m_CullTransparentMesh: 1
+--- !u!225 &1909617698
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909617694}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1909617699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909617694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8115cf668f0564685ba550123be3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableItem
+  isPlacedOnCharacter: 0
 --- !u!1 &1954853113
 GameObject:
   m_ObjectHideFlags: 0
@@ -4785,6 +4983,8 @@ GameObject:
   - component: {fileID: 1954853114}
   - component: {fileID: 1954853116}
   - component: {fileID: 1954853115}
+  - component: {fileID: 1954853117}
+  - component: {fileID: 1954853118}
   m_Layer: 5
   m_Name: Sword1
   m_TagString: Untagged
@@ -4849,6 +5049,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954853113}
   m_CullTransparentMesh: 1
+--- !u!225 &1954853117
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954853113}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1954853118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954853113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8115cf668f0564685ba550123be3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableItem
+  isPlacedOnCharacter: 0
 --- !u!1 &1979931806
 GameObject:
   m_ObjectHideFlags: 0
@@ -5073,6 +5298,8 @@ GameObject:
   - component: {fileID: 2097541346}
   - component: {fileID: 2097541348}
   - component: {fileID: 2097541347}
+  - component: {fileID: 2097541349}
+  - component: {fileID: 2097541350}
   m_Layer: 5
   m_Name: Sword3
   m_TagString: Untagged
@@ -5137,6 +5364,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097541345}
   m_CullTransparentMesh: 1
+--- !u!225 &2097541349
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097541345}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &2097541350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097541345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8115cf668f0564685ba550123be3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableItem
+  isPlacedOnCharacter: 0
 --- !u!1 &2114729617
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,6 +5633,8 @@ GameObject:
   - component: {fileID: 2121465994}
   - component: {fileID: 2121465996}
   - component: {fileID: 2121465995}
+  - component: {fileID: 2121465997}
+  - component: {fileID: 2121465998}
   m_Layer: 5
   m_Name: Hat1
   m_TagString: Untagged
@@ -5445,6 +5699,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121465993}
   m_CullTransparentMesh: 1
+--- !u!225 &2121465997
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121465993}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &2121465998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121465993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8115cf668f0564685ba550123be3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableItem
+  isPlacedOnCharacter: 0
 --- !u!1 &2135704086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5456,6 +5735,7 @@ GameObject:
   - component: {fileID: 2135704087}
   - component: {fileID: 2135704089}
   - component: {fileID: 2135704088}
+  - component: {fileID: 2135704090}
   m_Layer: 5
   m_Name: Character1
   m_TagString: Untagged
@@ -5520,6 +5800,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135704086}
   m_CullTransparentMesh: 1
+--- !u!114 &2135704090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135704086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6491272f9e845354f82788ded2282ccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DropZone
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
