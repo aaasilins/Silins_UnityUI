@@ -22,6 +22,9 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
             draggable.isPlacedOnCharacter = true;
             draggable.transform.SetParent(transform);
             // Keep it where the player dropped it
+
+            if (SoundManager.Instance != null)
+                SoundManager.Instance.PlayEquip();
         }
 
         if (zoneImage != null)

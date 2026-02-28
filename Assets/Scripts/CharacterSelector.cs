@@ -28,6 +28,9 @@ public class CharacterSelector : MonoBehaviour
     private void OnCharacterChanged(int index)
     {
         ShowCharacter(index);
+        
+        if (SoundManager.Instance != null)
+            SoundManager.Instance.PlayCharacterSound(index);
     }
 
     private void ShowCharacter(int index)
